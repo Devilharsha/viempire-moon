@@ -24,7 +24,7 @@ SOFTWARE.
 API_ID = "12101541"
 API_HASH = "937c9b43519a84a4972c0e19821cbb78"
 BOT_TOKEN = "5163902130:AAG8urBLGSYRyO4Jf5xUa1eL5mHIs0zaxho"
-SLYTOKEN = "idk"
+SYLTOKEN = "idk"
 MONGO_URI = "mongodb+srv://Music:Music@cluster0.f9x4i.mongodb.net/Cluster0?retryWrites=true&w=majority"
 REPORT_LOGS = "-1001781501832"
 LOGS = "-1001781501832"
