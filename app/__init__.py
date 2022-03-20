@@ -1,8 +1,10 @@
+from config import API_ID, API_HASH, BOT_TOKEN, MONGO_URI
+from app.utils import Sylviorus
+from app.db import LocalDb
+
 from motor.motor_asyncio import AsyncIOMotorClient as MongoClient
 from pyrogram import Client
-from config import API_ID, API_HASH, BOT_TOKEN, MONGO_URI
-from .utils import Sylviorus
-from .db import LocalDb
+
 
 bot = Client("Sylviorus",
              api_id=API_ID,
