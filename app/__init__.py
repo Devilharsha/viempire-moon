@@ -22,7 +22,7 @@ SOFTWARE.
 """
 
 from pyrogram import Client
-from config import API_ID, API_HASH, BOT_TOKEN, SYLTOKEN
+from config import API_ID, API_HASH, BOT_TOKEN, MONGO_URI
 from .utils import Sylviorus
 from .db import LocalDb
 
@@ -34,4 +34,6 @@ bot = Client("Sylviorus",
 
 
 ldb = LocalDb("reasons")
-SYL = Sylviorus(SYLTOKEN)
+mongo_client = MongoClient(MONGO_URI)
+SYL = mongo_client.cringe
+
