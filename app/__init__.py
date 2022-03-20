@@ -1,6 +1,5 @@
 from config import API_ID, API_HASH, BOT_TOKEN, MONGO_URI
 from app.utils import Sylviorus
-from app.db import LocalDb
 
 from motor.motor_asyncio import AsyncIOMotorClient as MongoClient
 from pyrogram import Client
@@ -13,7 +12,7 @@ bot = Client("Sylviorus",
              plugins=dict(root="{}/plugins".format(__name__)))
 
 
-ldb = LocalDb("reasons")
+ldb = ("reasons")
 mongo_client = MongoClient(MONGO_URI)
 SYL = mongo_client.cringe
 
